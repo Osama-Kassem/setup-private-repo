@@ -56,4 +56,5 @@ runs:
       REPO: ${{ inputs.repository }}
     run: |
       git config --global "url.file://$GITHUB_WORKSPACE/.private-repos/$REPO.insteadOf" "https://github.com/$REPO"
+      git config --global "url.file://$GITHUB_WORKSPACE/.private-repos/$REPO.insteadOf" "ssh://git@github.com/$REPO"
     shell: bash

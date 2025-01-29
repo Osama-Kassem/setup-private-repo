@@ -23,7 +23,7 @@ Four steps are run:
    IDs that only exist in that same PR ref, those commits would not be found.
    See: https://github.com/golang/go/issues/27043
 4. Configures Git with a `insteadOf` directive to use the local clone whenever
-   the HTTPS URL of the private repo is referenced.
+   the HTTPS or SSH URLs of the private repo are referenced.
 
 ## Inputs
 - `repository` (required): the full name of the GitHub repository
